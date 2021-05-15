@@ -82,6 +82,13 @@ public class UniClient {
         return query;
     }
 
+    /**
+     * Make a request to Uni.
+     *
+     * @param action request action
+     * @param data request payload
+     * @return UniResponse object
+     */
     public UniResponse request(final String action, final Map<String, Object> data) throws UniException {
         Map<String, Object> query = new HashMap<String, Object>();
         JSONObject body = new JSONObject(data);

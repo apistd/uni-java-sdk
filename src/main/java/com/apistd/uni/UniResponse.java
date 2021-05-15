@@ -13,6 +13,12 @@ public class UniResponse {
     public JSONObject data = null;
     public Object raw;
 
+    /**
+     * Create a new Uni Response.
+     *
+     * @param response raw HTTP response
+     * @throws UniException if catch error
+     */
     public UniResponse(final HttpResponse<JsonNode> response) throws UniException {
         JSONObject body = response.getBody().getObject();
         this.status = response.getStatus();

@@ -17,44 +17,95 @@ public class UniMessage {
     private String content;
     private String text;
 
+    /**
+     * Create a new Uni Message.
+     */
     public UniMessage() {}
 
+    /**
+     * Set the recipient phone number.
+     *
+     * @param phoneNumber phone number
+     * @return UniMessage object
+     */
     public UniMessage setTo(final String phoneNumber) {
         String arr[] = {phoneNumber};
         this.to = arr;
         return this;
     }
 
+    /**
+     * Set multiple recipient phone numbers.
+     *
+     * @param phoneNumbers phone numbers
+     * @return UniMessage object
+     */
     public UniMessage setTo(final String[] phoneNumbers) {
         this.to = phoneNumbers;
         return this;
     }
 
+    /**
+     * Set the message signature.
+     *
+     * @param signature message signature
+     * @return UniMessage object
+     */
     public UniMessage setSignature(final String signature) {
         this.signature = signature;
         return this;
     }
 
+    /**
+     * Set the template ID.
+     *
+     * @param templateId message template ID
+     * @return UniMessage object
+     */
     public UniMessage setTemplateId(final String templateId) {
         this.templateId = templateId;
         return this;
     }
 
+    /**
+     * Set the template data.
+     *
+     * @param templateData message template data
+     * @return UniMessage object
+     */
     public UniMessage setTemplateData(final Map<String, String> templateData) {
         this.templateData = templateData;
         return this;
     }
 
+    /**
+     * Set the message content.
+     *
+     * @param content message content (without signature)
+     * @return UniMessage object
+     */
     public UniMessage setContent(final String content) {
         this.content = content;
         return this;
     }
 
+    /**
+     * Set the message text.
+     *
+     * @param text message text (with signature)
+     * @return UniMessage object
+     */
     public UniMessage setText(final String text) {
         this.text = text;
         return this;
     }
 
+    /**
+     * Send the message.
+     *
+     * @return UniResponse object
+     * @throws UniException if catch error
+     */
     public UniResponse send() throws UniException {
         Map<String, Object> data = new HashMap<String, Object>();
 
