@@ -6,7 +6,7 @@
 
   <groupId>com.apistd.uni</groupId>
   <artifactId>uni-sdk</artifactId>
-  <version>0.0.3</version>
+  <version>0.0.4</version>
 
   <name>UniSDK</name>
   <url>https://unisms.apistd.com</url>
@@ -27,7 +27,7 @@
     <dependency>
       <groupId>com.konghq</groupId>
       <artifactId>unirest-java</artifactId>
-      <version>3.11.11</version>
+      <version>3.13.0</version>
     </dependency>
   </dependencies>
 

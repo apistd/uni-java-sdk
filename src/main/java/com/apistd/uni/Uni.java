@@ -4,7 +4,7 @@ package com.apistd.uni;
  * Singleton class to initialize Uni environment.
  */
 public class Uni {
-    public static final String VERSION = "0.0.3";
+    public static final String VERSION = "0.0.4";
 
     public static String signingAlgorithm = "hmac-sha256";
     public static String endpoint = System.getenv().getOrDefault("UNI_ENDPOINT", "https://uni.apistd.com");

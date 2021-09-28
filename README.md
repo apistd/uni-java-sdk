@@ -16,14 +16,14 @@ Uni Java SDK 使用 Maven 托管，可从公共 [Maven 仓库](https://mvnreposi
 <dependency>
     <groupId>com.apistd.uni</groupId>
     <artifactId>uni-sdk</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
 </dependency>
 ```
 
 或使用 Gradle：
 
 ```groovy
-implementation "com.apistd.uni:uni-sdk:0.0.3"
+implementation "com.apistd.uni:uni-sdk:0.0.4"
 ```
 
 ## 使用示例

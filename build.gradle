@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.konghq:unirest-java:3.11.11'
+    implementation 'com.konghq:unirest-java:3.13.0'
     testImplementation 'junit:junit:4.11'
 }
 
@@ -25,7 +25,7 @@ apply plugin: 'signing'
 
 group = 'com.apistd.uni'
 archivesBaseName = 'uni-sdk'
-version = '0.0.3'
+version = '0.0.4'
 description = 'UniSDK'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
